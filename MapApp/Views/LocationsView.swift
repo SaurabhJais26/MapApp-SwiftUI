@@ -11,6 +11,7 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject private var vm: LocationsViewModel
+    let maxWidthForIpad: CGFloat = 700
     
     var body: some View {
         ZStack {
@@ -19,6 +20,7 @@ struct LocationsView: View {
             VStack(spacing: 0) {
                 header
                     .padding()
+                    .frame(maxWidth: maxWidthForIpad)
                 Spacer()
                 locationsPreviewStack
             }
@@ -39,12 +41,12 @@ extension LocationsView {
         VStack {
             Button(action: vm.toggleLocationsList) {
                 Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
-                    .font(.title2)
+                    .font(.title3)
                     .fontWeight(.black)
                     .foregroundColor(.primary)
                     .frame(height: 60)
                     .frame(maxWidth: .infinity)
-                    .padding(.leading, 20)
+                    .padding(.leading, 30)
                     .animation(.none, value: vm.mapLocation)
                     .overlay(alignment: .leading) {
                         Image(systemName: "arrow.down")
@@ -85,6 +87,8 @@ extension LocationsView {
                     LocationPreviewView(location: location)
                         .shadow(color: Color.black.opacity(0.3), radius: 20)
                         .padding()
+                        .frame(maxWidth: maxWidthForIpad)
+                        .frame(maxWidth: .infinity)
                         .transition(.asymmetric(
                             insertion: .move(edge: .trailing),
                             removal: .move(edge: .leading)
