@@ -124,6 +124,62 @@ class LocationsDataService {
                 "kedarnath-temple-2",
             ],
             link: "https://en.wikipedia.org/wiki/Kedarnath_Temple"),
+        
+        Location(
+            name: "Tirumala Venkateswara Temple",
+            cityName: "Tirupati",
+            coordinates: CLLocationCoordinate2D(latitude: 13.6833, longitude: 79.3461),
+            description: "Tirumala Venkateswara Temple is a famous Hindu temple dedicated to Lord Venkateswara, located in the hill town of Tirumala in Tirupati, Andhra Pradesh. It is one of the richest temples in the world.",
+            imageNames: [
+                "tirupati-venkateswara-1",
+                "tirupati-venkateswara-2"
+            ],
+            link: "https://en.wikipedia.org/wiki/Venkateswara_Temple,_Tirumala"),
+        
+        Location(
+            name: "Sabarimala Ayyappa Temple",
+            cityName: "Pamba",
+            coordinates: CLLocationCoordinate2D(latitude: 9.4333, longitude: 77.0667),
+            description: "Sabarimala Temple is a Hindu temple dedicated to Ayyappa located on a hilltop in the Periyar Tiger Reserve in the Western Ghat mountain ranges of Kerala. It is one of the largest annual pilgrimages in the world.",
+            imageNames: [
+                "sabarimala-ayyappa-1",
+                "sabarimala-ayyappa-2"
+            ],
+            link: "https://en.wikipedia.org/wiki/Sabarimala"),
+        
+        Location(
+            name: "Kashi Vishwanath Temple",
+            cityName: "Varanasi",
+            coordinates: CLLocationCoordinate2D(latitude: 25.3109, longitude: 83.0095),
+            description: "Kashi Vishwanath Temple is one of the most famous Hindu temples dedicated to Lord Shiva. It is located in Varanasi, Uttar Pradesh, on the western bank of the holy river Ganga.",
+            imageNames: [
+                "kashi-vishwanath-1",
+                "kashi-vishwanath-2"
+            ],
+            link: "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple"),
+        
+        Location(
+            name: "Shri Jagannath Temple",
+            cityName: "Puri",
+            coordinates: CLLocationCoordinate2D(latitude: 19.8135, longitude: 85.8312),
+            description: "Shri Jagannath Temple in Puri, Odisha, is dedicated to Lord Jagannath, a form of Lord Vishnu. It is famous for the annual Rath Yatra, or chariot festival.",
+            imageNames: [
+                "puri-jagannath-1",
+                "puri-jagannath-2"
+            ],
+            link: "https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri"),
+        
+        Location(
+            name: "Amarnath Cave Temple",
+            cityName: "Anantnag",
+            coordinates: CLLocationCoordinate2D(latitude: 34.2133, longitude: 75.5022),
+            description: "The Amarnath Cave Temple is a Hindu shrine dedicated to Lord Shiva, located in the Anantnag district of Jammu and Kashmir. It is considered one of the holiest shrines in Hinduism.",
+            imageNames: [
+                "amarnath-cave-1",
+                "amarnath-cave-2",
+                "amarnath-cave-3"
+            ],
+            link: "https://en.wikipedia.org/wiki/Amarnath_Temple")
     ]
     
 }
